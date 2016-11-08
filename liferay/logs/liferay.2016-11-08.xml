@@ -1,0 +1,45 @@
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107808" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[Checkpoint start]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107829" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[checkpointClose start]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107849" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[checkpointClose synched]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107860" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[checkpointClose script done]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107903" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[checkpointClose end]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619107912" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[Checkpoint end - txts: 1]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619109493" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[Database closed]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619109524" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[open start - state not modified]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+
+<log4j:event logger="hsqldb.db.HSQLDB5844911167.ENGINE" timestamp="1478619109604" level="INFO" thread="Thread-80">
+<log4j:message><![CDATA[Database closed]]></log4j:message>
+<log4j:locationInfo class="org.hsqldb.persist.Logger" method="logInfoEvent" file="Logger.java" line="866"/>
+</log4j:event>
+

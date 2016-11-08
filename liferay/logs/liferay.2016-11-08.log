@@ -1,0 +1,9 @@
+16:31:47,808 INFO  [Thread-80][ENGINE:866] Checkpoint start
+16:31:47,829 INFO  [Thread-80][ENGINE:866] checkpointClose start
+16:31:47,849 INFO  [Thread-80][ENGINE:866] checkpointClose synched
+16:31:47,860 INFO  [Thread-80][ENGINE:866] checkpointClose script done
+16:31:47,903 INFO  [Thread-80][ENGINE:866] checkpointClose end
+16:31:47,912 INFO  [Thread-80][ENGINE:866] Checkpoint end - txts: 1
+16:31:49,493 INFO  [Thread-80][ENGINE:866] Database closed
+16:31:49,524 INFO  [Thread-80][ENGINE:866] open start - state not modified
+16:31:49,604 INFO  [Thread-80][ENGINE:866] Database closed
