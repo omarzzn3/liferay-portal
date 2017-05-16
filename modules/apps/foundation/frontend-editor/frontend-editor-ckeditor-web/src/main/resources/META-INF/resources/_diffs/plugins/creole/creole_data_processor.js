@@ -217,15 +217,15 @@
 								var res = '';
 
 								if (!instance._endResult.length) {
-									res += '~' + p1;
+									res += '' + p1;
 								}
 								else {
 									var lastResultString = instance._endResult[instance._endResult.length - 1];
 
 									var lastResultCharacter = lastResultString[lastResultString.length - 1];
 
-									if (lastResultCharacter !== '~' && lastResultCharacter !== p1[0]) {
-										res += '~';
+									if (lastResultCharacter !== p1[0]) {
+										res += '';
 									}
 
 									res += p1;
