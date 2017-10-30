@@ -474,12 +474,18 @@ public class AggregateFilter extends IgnoreModuleRequestFilter {
 		String browserId = ParamUtil.getString(request, "browserId");
 
 		if (!browserId.equals(BrowserSniffer.BROWSER_ID_IE)) {
-			Matcher matcher = _pattern.matcher(content);
+			Matcher matcher = null;
 
-			content = matcher.replaceAll(StringPool.BLANK);
+				matcher = _patternPartial1.matcher(content);
+				content = matcher.replaceAll(StringPool.BLANK);
+
+				matcher = _patternPartial2.matcher(content);
+				content = matcher.replaceAll(StringPool.BLANK);
+
+				matcher = _patternBloc.matcher(content);
+				content = matcher.replaceAll(StringPool.BLANK);
 		}
-
-		return MinifierUtil.minifyCss(content);
+			return MinifierUtil.minifyCss(content);
 	}
 
 	protected String getCssContent(
@@ -632,8 +638,14 @@ public class AggregateFilter extends IgnoreModuleRequestFilter {
 	private static final Log _log = LogFactoryUtil.getLog(
 		AggregateFilter.class);
 
-	private static final Pattern _pattern = Pattern.compile(
-		"(\\.ie|\\.js\\.ie)(([^,{]+)([^{}]))", Pattern.MULTILINE);
+	private static final Pattern _patternPartial1 = Pattern.compile(
+		"(\\.ie|\\.js\\.ie)(([^,{]+)([^{]))(\\,)", Pattern.MULTILINE);
+
+	private static final Pattern _patternPartial2 = Pattern.compile(
+		"(\\,)(\\.ie|\\.js\\.ie)(([^,{]+)([^{]))", Pattern.MULTILINE);
+
+	private static final Pattern _patternBloc = Pattern.compile(
+		"(\\.ie|\\.js\\.ie)([^}]*)}", Pattern.MULTILINE);
 
 	private ServletContext _servletContext;
 	private File _tempDir;
